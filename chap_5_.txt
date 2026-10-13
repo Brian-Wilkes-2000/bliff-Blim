@@ -1,0 +1,73 @@
+/**
+ * Method to get the images
+ * Updated image filenames to match Product Owner’s new required destinations.
+ */
+private String getResizeIcon(int i) {
+    String image = "";
+
+    if (i == 1) {
+        // Updated per Product Owner requirement: Slide 1 now shows Canada
+        image = "<html><body><img width='800' height='500' src='"
+                + getClass().getResource("/resources/canada.jpg")
+                + "'></body></html>";
+    } else if (i == 2) {
+        // Updated per Product Owner requirement: Slide 2 now shows Italy
+        image = "<html><body><img width='800' height='500' src='"
+                + getClass().getResource("/resources/italy.jpg")
+                + "'></body></html>";
+    } else if (i == 3) {
+        // Updated per Product Owner requirement: Slide 3 now shows Japan
+        image = "<html><body><img width='800' height='500' src='"
+                + getClass().getResource("/resources/japan.jpg")
+                + "'></body></html>";
+    } else if (i == 4) {
+        // Updated per Product Owner requirement: Slide 4 now shows Mexico
+        image = "<html><body><img width='800' height='500' src='"
+                + getClass().getResource("/resources/mexico.jpg")
+                + "'></body></html>";
+    } else if (i == 5) {
+        // Updated per Product Owner requirement: Slide 5 now shows Spain
+        image = "<html><body><img width='800' height='500' src='"
+                + getClass().getResource("/resources/spain.jpg")
+                + "'></body></html>";
+    }
+
+    return image;
+}
+
+/**
+ * Method to get the text values
+ * Updated text descriptions to match Product Owner’s new destination details.
+ */
+private String getTextDescription(int i) {
+    String text = "";
+
+    if (i == 1) {
+        // Updated description for Slide 1: Canada
+        text = "<html><body><font size='5'>#1 Canada</font><br>"
+             + "Great air!"
+             + "</body></html>";
+    } else if (i == 2) {
+        // Updated description for Slide 2: Italy
+        text = "<html><body><font size='5'>#2 Italy</font><br>"
+             + "Great food!"
+             + "</body></html>";
+    } else if (i == 3) {
+        // Updated description for Slide 3: Japan
+        text = "<html><body><font size='5'>#3 Japan</font><br>"
+             + "Great people!"
+             + "</body></html>";
+    } else if (i == 4) {
+        // Updated description for Slide 4: Mexico
+        text = "<html><body><font size='5'>#4 Mexico</font><br>"
+             + "Great value!"
+             + "</body></html>";
+    } else if (i == 5) {
+        // Updated description for Slide 5: Spain
+        text = "<html><body><font size='5'>#5 Spain</font><br>"
+             + "Once in a life time!"
+             + "</body></html>";
+    }
+
+    return text;
+}
